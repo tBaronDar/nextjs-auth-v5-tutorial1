@@ -36,6 +36,7 @@ async function AppBar() {
 		<div className={classes.container}>
 			<Link href={"/client-comp-protected"}>Go to client comp</Link>
 			<Link href={"/server-comp-protected"}>Go to server comp</Link>
+			<Link href={"/middleware-protected"}>Go to protected middleware</Link>
 			<div className={classes.inner}>{content}</div>
 		</div>
 	);
