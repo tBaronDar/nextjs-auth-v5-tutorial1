@@ -1,4 +1,5 @@
 import { auth, signIn, signOut } from "@/auth";
+import Link from "next/link";
 import React from "react";
 
 import classes from "./app-bar.module.css";
@@ -33,6 +34,7 @@ async function AppBar() {
 
 	return (
 		<div className={classes.container}>
+			<Link href={"/protected"}>Go to protected</Link>
 			<div className={classes.inner}>{content}</div>
 		</div>
 	);
